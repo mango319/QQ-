@@ -6,7 +6,12 @@
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
+// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com
+
 #import "AppDelegate.h"
+#import "ListViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +20,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ListViewController alloc] init]];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }
